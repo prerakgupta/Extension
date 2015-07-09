@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Start a new Browserstack session instantly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/migrate.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+  <style>
+    body {
+      font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+      font-size: 75%;
+      min-width: 400px;
+      min-height: 200px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #383334;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+      <div class="btn-group" role="group">
+        <button id="show_desktop" type="button" class="btn btn-info">Desktop</button>
+      </div>
+      <div class="btn-group" role="group">
+        <button id="show_mobile" type="button" class="btn btn-warning">Mobile</button>
+      </div>
+    </div>
+
+  <div id = "desktop" style="margin-top: 20px;">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" id="current_desk_os">OS</button>
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu" id="desktop_os">
+            <li><a href="#">Loading data for you..</a></li>
+          </ul>
+        </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default" id="current_desk_browser">Browser</button>
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu" id="desktop_browser">
+          <li><a href="#">Select an OS first</a></li>
+        </ul>
+      </div>
+  </div>
+
+  <div id="mobile" style="margin-top: 20px; display: none;">
+      <div class="btn-group">
+      <button type="button" class="btn btn-default" id="current_mobile_os">OS</button>
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu" id="mobile_os">
+        <li><a href="#">Loading data for you..</a></li>
+      </ul>
+      </div>
+
+      <div class="btn-group">
+      <button type="button" class="btn btn-default" id="current_mobile_device">Device</button>
+      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu" id="mobile_device">
+        <li><a href="#">Select an OS first</a></li>
+      </ul>
+      </div>
+
+  </div>
+
+  <div>
+   <div class="input-group" style="margin-top: 20px">
+     <input type="text" class="form-control" id="url" value="www.google.com">
+     <span class="input-group-btn">
+       <button class="btn btn-success" type="button" id="done">Go!</button>
+     </span>
+   </div>
+ </div>
+
+ <div class="alert alert-warning" role="alert" id="error" style="margin-top: 30px; font-size: 15px; display: none;">
+ </div>
+ <span class="pull-right">
+   <div class="footer" style="margin-top: 40px; font-size: 10px;"><font color="white"><b>Powered by</font></b>
+   <img src="icon.png" height="30" width="30" alt="Browserstack">
+ </div>
+ </span>
+ </div>
+
+
+</body>
+</html>
