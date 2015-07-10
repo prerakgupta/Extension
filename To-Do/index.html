@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Start a new Browserstack session instantly</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/migrate.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    div.items{
+      font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+      font-size: 25px;
+      background-color:skyBlue;
+      color:white;
+      padding: 20px;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-left: -20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="input-group input-group-lg" style="margin-top: 40px;">
+      <input type="text" id="input" class="form-control" placeholder="So what's on list today?">
+      <span class="input-group-btn">
+        <button class="btn btn-success" id="add" type="button">Add!</button>
+      </span>
+    </div>
+    <div>
+      <button class="btn btn-primary" style="margin-top: 10px;" id="show_to_do">Yet to be done
+          <span class="badge">0</span>
+      </button>
+      <button class="btn btn-warning" style="margin-top: 10px;" id="trash">Things you are done with
+          <span class="badge">0</span>
+      </button>
+      <div id="message" style="font-size: 15px"></div>
+   </div>
+
+    <div class="container" id="to_do_list">
+    </div>
+
+    <div class="container" id="done_list" style="display: none;">
+    </div>
+
+  </div>
+
+</body>
+</html>
