@@ -27,7 +27,7 @@ $(document).ready(function(){
         else if (final_device==="mobile") {
           var temp_devise = final_selection.split("-");
           url = url +"os=" +final_os +"&os_version=" +temp_devise[1].replace(/ /g, "+") +"&device=" +temp_devise[0].replace(/ /g, "+");
-          url = url + "&zoom_to_fit=true&full_screen=true&url=" + final_url + "&speed=1";
+          url = url + "&zoom_to_fit=true&full_screen=true&url=" + final_url + "&speed=1&start=true";
           console.log(url);
         }
         window.open(url, "_blank");
